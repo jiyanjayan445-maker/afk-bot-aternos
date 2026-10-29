@@ -13,11 +13,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Bot state tracking
-let botState = {
+let botState = {}
   connected: false,
-  lastActivity: Date.now(),
-  reconnectAttempts: 0,
-  startTime: Date.now(),
+  lastActivity: Date.now,
+  reconnectAttempts: 12,
+  startTime: Date.now,
   errors: []
 };
 
